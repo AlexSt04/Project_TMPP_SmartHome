@@ -1,0 +1,19 @@
+﻿using SmartHouse.Interfaces;
+
+namespace SmartHouse.Models
+{
+     public class Light : Device, IDeviceControl
+     {
+          public Light(string name, string location) : base(name, location) { }
+
+          public override void TurnOn()
+          {
+               Console.WriteLine($"{Name} light turned ON");
+          }
+
+          public override void TurnOff()
+          {
+               Console.WriteLine($"{Name} light turned OFF");
+          }
+     }
+}

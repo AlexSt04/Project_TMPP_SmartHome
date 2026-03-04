@@ -1,0 +1,19 @@
+﻿using SmartHouse.Interfaces;
+
+namespace SmartHouse.Models
+{
+     public class DoorLock : Device, IDeviceControl
+     {
+          public DoorLock(string name, string location) : base(name, location) { }
+
+          public override void TurnOn()
+          {
+               Console.WriteLine("Door locked");
+          }
+
+          public override void TurnOff()
+          {
+               Console.WriteLine("Door unlocked");
+          }
+     }
+}
