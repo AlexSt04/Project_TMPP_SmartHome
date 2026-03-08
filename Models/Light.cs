@@ -15,5 +15,10 @@ namespace SmartHouse.Models
           {
                Console.WriteLine($"{Name} light turned OFF");
           }
+
+          public override Device Clone()
+          {
+               return new Light(this.Name, this.Location);
+          }
      }
 }

@@ -22,5 +22,10 @@ namespace SmartHouse.Models
           {
                return temperature;
           }
+
+          public override Device Clone()
+          {
+               return new Thermostat(this.Name, this.Location);
+          }
      }
 }

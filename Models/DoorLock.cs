@@ -15,5 +15,10 @@ namespace SmartHouse.Models
           {
                Console.WriteLine("Door unlocked");
           }
+
+          public override Device Clone()
+          {
+               return new DoorLock(this.Name, this.Location);
+          }
      }
 }
