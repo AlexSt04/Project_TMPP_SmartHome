@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 ﻿using SmartHouseApp.Interfaces;
 
 namespace SmartHouseApp.Models
+=======
+﻿using SmartHouse.Interfaces;
+
+namespace SmartHouse.Models
+>>>>>>> eb5379e596b9c64ce6ebd50b36e66626d494e15d
 {
      public class Thermostat : Device, IDeviceControl, ISensor
      {

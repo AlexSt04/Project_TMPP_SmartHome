@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 ﻿using SmartHouseApp.Models;
 using System.Collections.Generic;
 
 namespace SmartHouseApp.Managers
+=======
+﻿using SmartHouse.Models;
+using System.Collections.Generic;
+
+namespace SmartHouse.Managers
+>>>>>>> eb5379e596b9c64ce6ebd50b36e66626d494e15d
 {
      public class SmartHomeManager
      {
